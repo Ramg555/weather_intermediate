@@ -1,0 +1,34 @@
+.side-container{
+    width: 25%;
+    height: auto;
+    background: $blue;
+    color: #fff;
+    text-align: center;
+    .search{
+        width: auto;
+        font-size: 12px;
+        padding: 5px 10px;
+        height: auto;
+        background: #6E707A;
+        color: #E7E7EB;
+        float: left;
+        margin-top: 30px;
+    }
+    .this-image-weather{
+        margin: 50px auto;
+        img{
+            width: 125px;
+        }
+    }
+    .temperature{
+        p{
+            font-size: 30px;
+            color: #6E707A;
+            b{
+                font-weight: 500;
+                color: #fff;
+                font-size: 75px;
+            }
+        }
+    }
+}

@@ -1,0 +1,48 @@
+body {
+  font-family: 'Raleway', sans-serif;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+}
+
+.side-container {
+  width: 25%;
+  height: auto;
+  background: #1E213A;
+  color: #fff;
+  text-align: center;
+}
+
+.side-container .search {
+  width: auto;
+  font-size: 12px;
+  padding: 5px 10px;
+  height: auto;
+  background: #6E707A;
+  color: #E7E7EB;
+  float: left;
+  margin-top: 30px;
+}
+
+.side-container .this-image-weather {
+  margin: 50px auto;
+}
+
+.side-container .this-image-weather img {
+  width: 125px;
+}
+
+.side-container .temperature p {
+  font-size: 30px;
+  color: #6E707A;
+}
+
+.side-container .temperature p b {
+  font-weight: 500;
+  color: #fff;
+  font-size: 75px;
+}
+/*# sourceMappingURL=style.css.map */

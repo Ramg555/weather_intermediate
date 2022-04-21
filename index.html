@@ -21,25 +21,27 @@
       rel="stylesheet"
     />
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;500;600;700&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
 
-    <title>Wheater App</title>
+    <title>Weather App</title>
   </head>
   <body>
-    <div class="container">
+    <!-- <div class="container"> -->
       <div class="row">
-        <div class="col-4 side-container">
+        <div class="col-3 side-container">
           <div class="container">
             <div class="row">
-              <div class="col">
-    
+              <div>
                 <button class="search" id="search">Search for places</button>
                 <div class="ubication" id="ubication">
-    
+                  <!-- Icon -->
                 </div>
               </div>
-    
               <div class="this-image-weather">
                 <img src="img/Shower.png" alt="">
               </div>
@@ -50,66 +52,109 @@
                 <p>Shower</p>
               </div>
               <div class="date" id="date">
-                <p>Todat</p>
+                <p>Today</p>
                 <p>Fri 5 Jun</p>
               </div>
               <div class="city-name">
+                <!-- Icon -->
                 <p>Helsinki</p>
               </div>
             </div>
           </div>
         </div>
-        <div class="col-8 main-contianer">
+        <div class="col-9 main-contianer">
+
           <div class="options" id="options">
             <p>°C</p>
             <p>°F</p>
           </div>
+
+
           <div class="5-weather">
             <div class="row">
               <div class="col next-weather" id="one">
                 <div class="card">
-                  <p class="date"></p>
-                  <img src="" alt="" class="weather-card">
-                  <p class="max"></p>
-                  <p class="min"></p>
+                  <p class="date">Tomorrow</p>
+                  <img src="img/Clear.png" width="50px" alt="" class="weather-card">
+                  <div class="max-min-container">
+                    <p class="max">20 C°</p>
+                    <p class="min"> 10 C°</p>
+                  </div>
                 </div>
               </div>
               <div class="col next-weather" id="two">
                 <div class="card">
-                  <p class="date"></p>
-                  <img src="" alt="" class="weather-card">
-                  <p class="max"></p>
-                  <p class="min"></p>
+                  <p class="date">Sun, 7 Jun</p>
+                  <img src="img/Clear.png" width="50px" alt="" class="weather-card">
+                  <div class="max-min-container">
+                    <p class="max">20 C°</p>
+                    <p class="min"> 10 C°</p>
+                  </div>
                 </div>
               </div>
               <div class="col next-weather" id="three">
                 <div class="card">
-                  <p class="date"></p>
-                  <img src="" alt="" class="weather-card">
-                  <p class="max">15 C°</p>
-                  <p class="min"></p>
+                  <p class="date">Sun, 7 Jun</p>
+                  <img src="img/Clear.png" width="50px"alt="" class="weather-card">
+                  <div class="max-min-container">
+                    <p class="max">20 C°</p>
+                    <p class="min"> 10 C°</p>
+                  </div>
                 </div>
               </div>
               <div class="col next-weather" id="four">
                 <div class="card">
-                  <p class="date"></p>
-                  <img src="" alt="" class="weather-card">
-                  <p class="max"></p>
-                  <p class="min"></p>
+                  <p class="date">Sun, 7 Jun</p>
+                  <img src="img/Clear.png" width="50px"alt="" class="weather-card">
+                  <div class="max-min-container">
+                    <p class="max">20 C°</p>
+                    <p class="min"> 10 C°</p>
+                  </div>
                 </div>
               </div>
               <div class="col next-weather" id="five">
                 <div class="card">
-                  <p class="date"></p>
-                  <img src="" alt="" class="weather-card">
-                  <p class="max"></p>
-                  <p class="min"></p>
+                  <p class="date">Sun, 7 Jun</p>
+                  <img src="img/Clear.png"width="50px" alt="" class="weather-card">
+                  <div class="max-min-container">
+                    <p class="max">20 C°</p>
+                    <p class="min"> 10 C°</p>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
+
+
+          <div class="hightlights" id="hightlights">
+            <p>Today Higlights</p>
+            <div class="row"> 
+              <div class="col-6" id="wind-status">
+                <p>Wind status</p>
+                <p><b>7</b>mph</p>
+                <!-- Icon -->
+                <p>WSW</p>
+              </div>
+              <div class="col-6" id="humidity">
+                <p>Humidity</p>
+                <p><b>84</b>%</p>
+                <!-- Bar -->
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-6" id="visibility">
+                <p>Visibility</p>
+                <p><b>6,4</b>miles</p>
+              </div>
+              <div class="col-6" id="pressure">
+                <p>Air Pressure</p>
+                <p><b>998</b>mb</p>
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
-    </div>
+    <!-- </div> -->
   </body>
 </html>
