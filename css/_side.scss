@@ -1,34 +1,78 @@
 .side-container{
-    width: 25%;
-    height: auto;
+    width: 30%;
     background: $blue;
     color: #fff;
     text-align: center;
+    .get-ubication{
+        margin-top: 45px;
+        float: right;
+        background: #6E707A;
+        border: none;
+        border-radius: 100%;
+        width: fit-content;
+        height: fit-content;
+        justify-content: center;
+        box-shadow: 0px 5px rgba($color: #000000, $alpha: .2);
+        i{
+            color: #fff;
+        }
+    }
     .search{
         width: auto;
-        font-size: 12px;
+        font-size: 14px;
+        font-weight: 500;
         padding: 5px 10px;
         height: auto;
         background: #6E707A;
         color: #E7E7EB;
         float: left;
-        margin-top: 30px;
+        margin: 40px auto 40px auto;
+        box-shadow: 0px 5px rgba($color: #000000, $alpha: .2);
     }
     .this-image-weather{
-        margin: 50px auto;
+        margin: 40px auto;
         img{
-            width: 125px;
+            width: 120px;
         }
     }
     .temperature{
         p{
             font-size: 30px;
-            color: #6E707A;
+            color: #A09FB1;
             b{
                 font-weight: 500;
                 color: #fff;
                 font-size: 75px;
             }
+        }
+    }
+    .name{
+        p{
+            color: #A09FB1;
+            font-weight: 600;
+            font-size: 20px;
+            margin: 20px auto 25px auto;
+        }
+    }
+    .date{
+        display: flex;
+        justify-content: center;
+        p{
+            float: left;
+            margin: 20px 10px;
+            font-size: 12px;
+            color: #6E707A;
+            
+        }
+    }
+    .city-name{
+        display: flex;
+        justify-content: center;
+        color: #6E707A;
+        margin-bottom: 20px;
+        .icon-location{
+            width: 15px;
+            margin-right: 5px;
         }
     }
 }

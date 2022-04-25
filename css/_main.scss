@@ -1,0 +1,166 @@
+.main-contianer{
+    background: $dark_blue;
+    width: 70%;
+    padding: 12px 110px 0px 110px;
+    .options{
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: flex-end;
+        align-items:center;
+        flex-direction:row;
+        .checkboxes{
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            .checkbox{
+                border-radius: 100%;
+                width: 30px;
+                height: 30px;
+                position: relative;
+                margin: 5px;
+                .box{
+                    width: 100%;
+                    height: 100%;
+                    position: absolute;
+                    z-index: 1;
+                    background: #585676;
+                    border: none;
+                    border-radius: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    p{
+                        color: #fff;
+                        margin: 0;
+                        font-weight: 600;
+                    }
+                }
+                input{
+                    position: absolute;
+                    cursor: pointer;
+                    width: 100%;
+                    height: 100%;
+                    z-index: 2;
+                    appearance: none;
+                    &:checked ~ .box{
+                        background: #fff;
+                        p{
+                            color: $dark_blue;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .five-days {
+        margin-bottom: 20px;
+        .next-weather{
+            .card{
+                width:auto;
+                padding: 15px 15px 10px 15px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background: $blue;
+                p{
+                    color: #fff;
+                }
+                .weather-card{
+                    width: 50px;
+                    margin-bottom: 10px;
+                }
+                .max-min-container{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    .min{
+                        color: #6E707A;
+                    }
+                    p{
+                        margin: 0px 0px 10px 10px;
+                    }
+                }
+            }
+        }
+    }
+    .hightlights{
+        p{
+            color: #fff;
+        }
+        .top{
+            display: flex;
+            justify-content:space-around;
+        }
+        .bottom{
+            display: flex;
+            justify-content: space-around;
+            .cards{
+                padding: 15px 0px 15px 0px;
+                p{
+                    font-weight: 400;
+                    font-size: 16px;
+                    b{
+                        font-size: 40px;
+                    }
+                }
+                .number{
+                    font-size: 30px;
+                }
+            }
+        }
+        .cards{
+            padding: 0;
+            width: 300px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: $blue;
+            margin-bottom: 20px;
+            i{
+                color: #fff;
+                background: #616475;
+                border-radius: 100%; 
+                border: solid 5px #616475;
+                margin-top: 8px;
+            }
+            p{
+                margin-bottom: 0px;
+            }
+            .wind-direction{
+                float: right;
+                font-size: 12px;
+                font-weight: 400;
+                margin: 10px 0px 10px 10px ;
+            }
+            .mph{
+                height: min-content;
+                font-weight: 400;
+                font-size: 30px;
+                b{
+                    font-weight: 700;
+                    font-size: 50px;
+                }
+            }
+        }
+        #humidity{
+            padding-top: 10px;
+            .humidity-percent{
+                font-size: 30px;
+                b{
+                    font-size: 50px;
+                }
+            }
+            .the-progress-bar{
+                p{
+                    font-size: 14px;
+                }
+                .progress-bar-values{
+                    display: flex;
+                    justify-content: space-between;
+                    font-size: 8px;
+                }
+            }
+        }
+    }
+}

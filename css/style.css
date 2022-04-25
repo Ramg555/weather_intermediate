@@ -1,48 +1,377 @@
-body {
+html {
+  height: 100%;
+}
+
+html body {
   font-family: 'Raleway', sans-serif;
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
-  height: -webkit-max-content;
-  height: -moz-max-content;
-  height: max-content;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+}
+
+html body .footer-text {
+  text-align: center;
+  color: #A09FB1;
+  margin: 0;
+}
+
+html body .footer-text u {
+  font-weight: 700;
 }
 
 .side-container {
-  width: 25%;
-  height: auto;
+  width: 30%;
   background: #1E213A;
   color: #fff;
   text-align: center;
 }
 
+.side-container .get-ubication {
+  margin-top: 45px;
+  float: right;
+  background: #6E707A;
+  border: none;
+  border-radius: 100%;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-shadow: 0px 5px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 5px rgba(0, 0, 0, 0.2);
+}
+
+.side-container .get-ubication i {
+  color: #fff;
+}
+
 .side-container .search {
   width: auto;
-  font-size: 12px;
+  font-size: 14px;
+  font-weight: 500;
   padding: 5px 10px;
   height: auto;
   background: #6E707A;
   color: #E7E7EB;
   float: left;
-  margin-top: 30px;
+  margin: 40px auto 40px auto;
+  -webkit-box-shadow: 0px 5px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 5px rgba(0, 0, 0, 0.2);
 }
 
 .side-container .this-image-weather {
-  margin: 50px auto;
+  margin: 40px auto;
 }
 
 .side-container .this-image-weather img {
-  width: 125px;
+  width: 120px;
 }
 
 .side-container .temperature p {
   font-size: 30px;
-  color: #6E707A;
+  color: #A09FB1;
 }
 
 .side-container .temperature p b {
   font-weight: 500;
   color: #fff;
   font-size: 75px;
+}
+
+.side-container .name p {
+  color: #A09FB1;
+  font-weight: 600;
+  font-size: 20px;
+  margin: 20px auto 25px auto;
+}
+
+.side-container .date {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.side-container .date p {
+  float: left;
+  margin: 20px 10px;
+  font-size: 12px;
+  color: #6E707A;
+}
+
+.side-container .city-name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #6E707A;
+  margin-bottom: 20px;
+}
+
+.side-container .city-name .icon-location {
+  width: 15px;
+  margin-right: 5px;
+}
+
+.main-contianer {
+  background: #100E1D;
+  width: 70%;
+  padding: 12px 110px 0px 110px;
+}
+
+.main-contianer .options {
+  margin-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.main-contianer .options .checkboxes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.main-contianer .options .checkboxes .checkbox {
+  border-radius: 100%;
+  width: 30px;
+  height: 30px;
+  position: relative;
+  margin: 5px;
+}
+
+.main-contianer .options .checkboxes .checkbox .box {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 1;
+  background: #585676;
+  border: none;
+  border-radius: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-contianer .options .checkboxes .checkbox .box p {
+  color: #fff;
+  margin: 0;
+  font-weight: 600;
+}
+
+.main-contianer .options .checkboxes .checkbox input {
+  position: absolute;
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+
+.main-contianer .options .checkboxes .checkbox input:checked ~ .box {
+  background: #fff;
+}
+
+.main-contianer .options .checkboxes .checkbox input:checked ~ .box p {
+  color: #100E1D;
+}
+
+.main-contianer .five-days {
+  margin-bottom: 20px;
+}
+
+.main-contianer .five-days .next-weather .card {
+  width: auto;
+  padding: 15px 15px 10px 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #1E213A;
+}
+
+.main-contianer .five-days .next-weather .card p {
+  color: #fff;
+}
+
+.main-contianer .five-days .next-weather .card .weather-card {
+  width: 50px;
+  margin-bottom: 10px;
+}
+
+.main-contianer .five-days .next-weather .card .max-min-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-contianer .five-days .next-weather .card .max-min-container .min {
+  color: #6E707A;
+}
+
+.main-contianer .five-days .next-weather .card .max-min-container p {
+  margin: 0px 0px 10px 10px;
+}
+
+.main-contianer .hightlights p {
+  color: #fff;
+}
+
+.main-contianer .hightlights .top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.main-contianer .hightlights .bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.main-contianer .hightlights .bottom .cards {
+  padding: 15px 0px 15px 0px;
+}
+
+.main-contianer .hightlights .bottom .cards p {
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.main-contianer .hightlights .bottom .cards p b {
+  font-size: 40px;
+}
+
+.main-contianer .hightlights .bottom .cards .number {
+  font-size: 30px;
+}
+
+.main-contianer .hightlights .cards {
+  padding: 0;
+  width: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #1E213A;
+  margin-bottom: 20px;
+}
+
+.main-contianer .hightlights .cards i {
+  color: #fff;
+  background: #616475;
+  border-radius: 100%;
+  border: solid 5px #616475;
+  margin-top: 8px;
+}
+
+.main-contianer .hightlights .cards p {
+  margin-bottom: 0px;
+}
+
+.main-contianer .hightlights .cards .wind-direction {
+  float: right;
+  font-size: 12px;
+  font-weight: 400;
+  margin: 10px 0px 10px 10px;
+}
+
+.main-contianer .hightlights .cards .mph {
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
+  font-weight: 400;
+  font-size: 30px;
+}
+
+.main-contianer .hightlights .cards .mph b {
+  font-weight: 700;
+  font-size: 50px;
+}
+
+.main-contianer .hightlights #humidity {
+  padding-top: 10px;
+}
+
+.main-contianer .hightlights #humidity .humidity-percent {
+  font-size: 30px;
+}
+
+.main-contianer .hightlights #humidity .humidity-percent b {
+  font-size: 50px;
+}
+
+.main-contianer .hightlights #humidity .the-progress-bar p {
+  font-size: 14px;
+}
+
+.main-contianer .hightlights #humidity .the-progress-bar .progress-bar-values {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 8px;
 }
 /*# sourceMappingURL=style.css.map */

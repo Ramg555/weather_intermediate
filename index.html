@@ -28,19 +28,19 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
 
+    <script src="https://kit.fontawesome.com/a574ea1d41.js" crossorigin="anonymous"></script>
+
     <title>Weather App</title>
   </head>
   <body>
-    <!-- <div class="container"> -->
-      <div class="row">
-        <div class="col-3 side-container">
+        <div class="side-container">
           <div class="container">
             <div class="row">
               <div>
                 <button class="search" id="search">Search for places</button>
-                <div class="ubication" id="ubication">
-                  <!-- Icon -->
-                </div>
+                <button class="get-ubication" id="get-ubication">
+                  <i class="fa-solid fa-crosshairs"></i>
+                </button>
               </div>
               <div class="this-image-weather">
                 <img src="img/Shower.png" alt="">
@@ -56,21 +56,36 @@
                 <p>Fri 5 Jun</p>
               </div>
               <div class="city-name">
-                <!-- Icon -->
+                <div class="icon-location">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd" />
+                  </svg>
+                </div>
                 <p>Helsinki</p>
               </div>
             </div>
           </div>
         </div>
-        <div class="col-9 main-contianer">
-
+        <div class="main-contianer">
           <div class="options" id="options">
-            <p>°C</p>
-            <p>°F</p>
+
+            <div class="checkboxes">
+              <div class="checkbox">
+                <input type="radio" name="grades" value="c" id="centigrades">
+                <div class="box">
+                  <p data-text="centigrades">°C</p>
+                </div>
+              </div>
+              <div class="checkbox">
+                <input type="radio" name="grades" value="f" id="fahrenheit">
+                <div class="box">
+                  <p data-text="fahrenheit">°F</p>
+                </div>
+              </div>
+            </div>
+
           </div>
-
-
-          <div class="5-weather">
+          <div class="five-days">
             <div class="row">
               <div class="col next-weather" id="one">
                 <div class="card">
@@ -85,7 +100,7 @@
               <div class="col next-weather" id="two">
                 <div class="card">
                   <p class="date">Sun, 7 Jun</p>
-                  <img src="img/Clear.png" width="50px" alt="" class="weather-card">
+                  <img src="img/Clear.png"alt="" class="weather-card">
                   <div class="max-min-container">
                     <p class="max">20 C°</p>
                     <p class="min"> 10 C°</p>
@@ -128,33 +143,44 @@
 
           <div class="hightlights" id="hightlights">
             <p>Today Higlights</p>
-            <div class="row"> 
-              <div class="col-6" id="wind-status">
+            <div class="row top"> 
+              <div class="col-6 cards" id="wind-status">
                 <p>Wind status</p>
-                <p><b>7</b>mph</p>
-                <!-- Icon -->
-                <p>WSW</p>
+                <p class="mph"><b>7</b>mph</p>
+                <div>
+                  <i class="fa-solid fa-location-arrow"></i>
+                  <p class="wind-direction">WSW</p>
+                </div>
               </div>
-              <div class="col-6" id="humidity">
+              <div class="col-6 cards" id="humidity">
                 <p>Humidity</p>
-                <p><b>84</b>%</p>
-                <!-- Bar -->
+                <p class="humidity-percent"><b>84</b>%</p>
+                <div class="the-progress-bar">
+                  <div class="progress-bar-values">
+                    <p>0</p>
+                    <p>50</p>
+                    <p>100</p>
+                  </div>
+                  <progress value="25" max="100" class="bar"></progress>
+                  <div>
+                    <p style="float: right; ">%</p>
+                  </div>
+                </div>
+                <!-- Barra de progreso -->
               </div>
             </div>
-            <div class="row">
-              <div class="col-6" id="visibility">
+            <div class="row bottom">
+              <div class="col-6 cards" id="visibility">
                 <p>Visibility</p>
-                <p><b>6,4</b>miles</p>
+                <p class="number"><b>6,4</b> miles</p>
               </div>
-              <div class="col-6" id="pressure">
+              <div class="col-6 cards" id="pressure">
                 <p>Air Pressure</p>
-                <p><b>998</b>mb</p>
+                <p class="number"><b>998</b> mb</p>
               </div>
             </div>
           </div>
-
+          <p class="footer-text">created by <u>TrueHero</u> - devChallenges.io</p>
         </div>
-      </div>
-    <!-- </div> -->
   </body>
 </html>
