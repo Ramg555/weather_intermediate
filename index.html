@@ -42,29 +42,42 @@
                   <i class="fa-solid fa-crosshairs"></i>
                 </button>
               </div>
-              <div class="this-image-weather">
-                <img src="img/Shower.png" alt="">
+              <div class="current-image-weather" id="current_image_weather">
+                <!-- <img src="http://openweathermap.org/img/wn/01n@2x.png" alt=""> -->
               </div>
               <div class="temperature" id="temperature">
-                <p><b>15</b>°C</p>
+                <!-- <p><b>15</b>°C</p> -->
               </div>
               <div class="name" id="name">
-                <p>Shower</p>
+                <!-- <p>Shower</p> -->
               </div>
               <div class="date" id="date">
                 <p>Today</p>
-                <p>Fri 5 Jun</p>
+                <!-- <p>Fri 5 Jun</p> -->
               </div>
-              <div class="city-name">
+              <div class="city-name" id="city_name">
                 <div class="icon-location">
                   <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
                     <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd" />
                   </svg>
                 </div>
-                <p>Helsinki</p>
+                <!-- <p>Helsinki</p> -->
               </div>
             </div>
           </div>
+        </div>
+
+        <div class="search_box" id="search_box">
+          <div>
+            <input type="text" id="search_input" placeholder="Search">
+            <button id="search_button" class="search_button">Search</button>
+          </div>
+          <div class="results" id="results">
+            <ul class="list_result" id="list_result">
+              <li class="result">Chihuahua</li>
+            </ul>
+          </div>
+
         </div>
         <div class="main-contianer">
           <div class="options" id="options">
@@ -86,8 +99,8 @@
 
           </div>
           <div class="five-days">
-            <div class="row">
-              <div class="col next-weather" id="one">
+            <div class="row" id="cards">
+              <!-- <div class="col next-weather" id="one">
                 <div class="card">
                   <p class="date">Tomorrow</p>
                   <img src="img/Clear.png" width="50px" alt="" class="weather-card">
@@ -96,8 +109,8 @@
                     <p class="min"> 10 C°</p>
                   </div>
                 </div>
-              </div>
-              <div class="col next-weather" id="two">
+              </div> -->
+              <!-- <div class="col next-weather" id="two">
                 <div class="card">
                   <p class="date">Sun, 7 Jun</p>
                   <img src="img/Clear.png"alt="" class="weather-card">
@@ -106,8 +119,8 @@
                     <p class="min"> 10 C°</p>
                   </div>
                 </div>
-              </div>
-              <div class="col next-weather" id="three">
+              </div> -->
+              <!-- <div class="col next-weather" id="three">
                 <div class="card">
                   <p class="date">Sun, 7 Jun</p>
                   <img src="img/Clear.png" width="50px"alt="" class="weather-card">
@@ -116,8 +129,8 @@
                     <p class="min"> 10 C°</p>
                   </div>
                 </div>
-              </div>
-              <div class="col next-weather" id="four">
+              </div> -->
+              <!-- <div class="col next-weather" id="four">
                 <div class="card">
                   <p class="date">Sun, 7 Jun</p>
                   <img src="img/Clear.png" width="50px"alt="" class="weather-card">
@@ -126,8 +139,8 @@
                     <p class="min"> 10 C°</p>
                   </div>
                 </div>
-              </div>
-              <div class="col next-weather" id="five">
+              </div> -->
+              <!-- <div class="col next-weather" id="five">
                 <div class="card">
                   <p class="date">Sun, 7 Jun</p>
                   <img src="img/Clear.png"width="50px" alt="" class="weather-card">
@@ -136,7 +149,7 @@
                     <p class="min"> 10 C°</p>
                   </div>
                 </div>
-              </div>
+              </div> -->
             </div>
           </div>
 
@@ -144,16 +157,16 @@
           <div class="hightlights" id="hightlights">
             <p>Today Higlights</p>
             <div class="row top"> 
-              <div class="col-6 cards" id="wind-status">
-                <p>Wind status</p>
+              <div class="col-6 cards" id="wind_status">
+                <!-- <p>Wind status</p>
                 <p class="mph"><b>7</b>mph</p>
                 <div>
                   <i class="fa-solid fa-location-arrow"></i>
                   <p class="wind-direction">WSW</p>
-                </div>
+                </div> -->
               </div>
               <div class="col-6 cards" id="humidity">
-                <p>Humidity</p>
+                <!-- <p>Humidity</p>
                 <p class="humidity-percent"><b>84</b>%</p>
                 <div class="the-progress-bar">
                   <div class="progress-bar-values">
@@ -161,26 +174,28 @@
                     <p>50</p>
                     <p>100</p>
                   </div>
-                  <progress value="25" max="100" class="bar"></progress>
+                  <progress value="84" max="100" class="bar"></progress>
                   <div>
                     <p style="float: right; ">%</p>
                   </div>
-                </div>
-                <!-- Barra de progreso -->
+                </div> -->
               </div>
             </div>
             <div class="row bottom">
               <div class="col-6 cards" id="visibility">
-                <p>Visibility</p>
-                <p class="number"><b>6,4</b> miles</p>
+                <!-- <p>Visibility</p>
+                <p class="number"><b>6,4</b> miles</p> -->
               </div>
               <div class="col-6 cards" id="pressure">
-                <p>Air Pressure</p>
-                <p class="number"><b>998</b> mb</p>
+                <!-- <p>Air Pressure</p>
+                <p class="number"><b>998</b> mb</p> -->
               </div>
             </div>
           </div>
           <p class="footer-text">created by <u>TrueHero</u> - devChallenges.io</p>
         </div>
+
+        <script src="js/app.js"></script>
+        <script src="js/moment.min.js"></script>
   </body>
 </html>

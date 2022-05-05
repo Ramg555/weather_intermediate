@@ -1,7 +1,7 @@
 .main-contianer{
     background: $dark_blue;
     width: 70%;
-    padding: 12px 110px 0px 110px;
+    padding: 12px 90px 0px 90px;
     .options{
         margin-bottom: 20px;
         display: flex;
@@ -66,18 +66,19 @@
                     color: #fff;
                 }
                 .weather-card{
-                    width: 50px;
+                    width: 60px;
+                    height: 100%;
                     margin-bottom: 10px;
                 }
                 .max-min-container{
                     display: flex;
-                    justify-content: center;
+                    justify-content: space-around;
                     align-items: center;
                     .min{
                         color: #6E707A;
                     }
                     p{
-                        margin: 0px 0px 10px 10px;
+                        margin: 0px 0px 10px 5px;
                     }
                 }
             }

@@ -66,13 +66,14 @@ html body .footer-text u {
   margin: 40px auto 40px auto;
   -webkit-box-shadow: 0px 5px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 5px rgba(0, 0, 0, 0.2);
+  border: none;
 }
 
-.side-container .this-image-weather {
+.side-container .current-image-weather {
   margin: 40px auto;
 }
 
-.side-container .this-image-weather img {
+.side-container .current-image-weather img {
   width: 120px;
 }
 
@@ -129,7 +130,7 @@ html body .footer-text u {
 .main-contianer {
   background: #100E1D;
   width: 70%;
-  padding: 12px 110px 0px 110px;
+  padding: 12px 90px 0px 90px;
 }
 
 .main-contianer .options {
@@ -236,7 +237,8 @@ html body .footer-text u {
 }
 
 .main-contianer .five-days .next-weather .card .weather-card {
-  width: 50px;
+  width: 60px;
+  height: 100%;
   margin-bottom: 10px;
 }
 
@@ -244,9 +246,8 @@ html body .footer-text u {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -257,7 +258,7 @@ html body .footer-text u {
 }
 
 .main-contianer .five-days .next-weather .card .max-min-container p {
-  margin: 0px 0px 10px 10px;
+  margin: 0px 0px 10px 5px;
 }
 
 .main-contianer .hightlights p {
@@ -373,5 +374,9 @@ html body .footer-text u {
       -ms-flex-pack: justify;
           justify-content: space-between;
   font-size: 8px;
+}
+
+.search_box {
+  background: #1E213A;
 }
 /*# sourceMappingURL=style.css.map */
