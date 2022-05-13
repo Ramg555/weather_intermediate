@@ -18,17 +18,9 @@ const options = {
 	}
 };
 
-// Event Listeners
-document.addEventListener("DOMContentLoaded", ObtenerLocacion());
-
-
-
-
-
-
-
 
 // Variables
+const search_input = document.querySelector("#search_input");
 const current_image_weather = document.querySelector("#current_image_weather");
 const temperature = document.querySelector("#temperature");
 const name_weather = document.querySelector("#name");
@@ -39,9 +31,11 @@ const _humedad = document.querySelector("#humidity");
 const visibilidad = document.querySelector("#visibility");
 const pressure = document.querySelector("#pressure");
 const cards = document.querySelector("#cards");
+const list_result = document.querySelector("#list_result");
 
-
-
+// Event Listeners
+document.addEventListener("DOMContentLoaded", ObtenerLocacion());
+search_input.addEventListener("input", () => console.log(search_input.value))
 
 
 
@@ -81,6 +75,30 @@ function ObtenerClimaActual(ciudad){
         ImprimirHTMLCurrent(response)
     })
     .catch(err => console.error(err));
+}
+
+function BuscarPais(name){
+    fetch(`https://community-open-weather-map.p.rapidapi.com/find?q=${name}&cnt=2&type=like&units=metric`, options)
+	.then(response => response.json())
+	.then(response => {
+        console.log("Buscar Pais");
+        console.log(response)
+        ImprimirLista(response)
+    })
+	.catch(err => console.error(err));
+}
+
+function ImprimirLista(objeto){
+    const lista = objeto.list;
+    lista.forEach(objeto => {
+        let nombre = objeto.name
+        const {lat,lon} = objeto.coord;
+        const paisHTML = document.createElement("li");
+        paisHTML.textContent = nombre;
+        paisHTML.classList.add("result");
+        list_result.appendChild(paisHTML);
+    })
+
 }
 
 
@@ -172,3 +190,5 @@ function ImprimirHTMLCurrent(objeto){
         <p class="number"><b>${pressAire}</b> mb</p>
     `
 }
+
+
